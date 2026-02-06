@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copied in Js</title>
+    <style>
+        body{
+            background-color: rgba(201,171,171);
+        }
+        .container{
+            
+            position: relative;
+            top: 150px;
+            left: 450px;
+        }
+        #copyme{
+            height: 50px;
+            width: 400px;
+            font-size: large;
+        }
+        button{
+            height: 50px;
+            width: 80px;
+            background-color: aliceblue;
+            position: absolute;
+            left: 325px;
+            top: 60px;
+            border: 2px solid white;
+            font-size: larger;
+            cursor: pointer;
+        }
+        .text{
+            height: 100px;
+            width: 400px;
+            border: 2px solid gray;
+            background-color: white;
+             font-size: 18px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lets Copy Paste</h1>
+    <input id="copyme" value="https://darkcssweb.com">
+    <button onclick="navigator.clipboard.writeText(copyme.value); this.innerText ='copied.!'">
+        copy
+    </button><br><br>
+    <textarea class="text"></textarea>
+    </div>
+    
+
+
+
+</body>
+</html>
